@@ -12,3 +12,14 @@ int CountElementLenght(string[] array, int length)
             count++;
     return count;
 }
+
+void CopySizeElements(string[] array1, string[] array2, int size)
+{
+    int j = 0;
+    for(int i = 0; i < array1.Length; i++)
+        if(array1[i].Length <= size)
+        {
+            array2[j] = array1[i];
+            j++;
+        }
+}
